@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄计时器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 番茄计时器</h1>
+        
+        <div class="timer-display" id="timer">25:00</div>
+        
+        <div class="controls">
+            <button id="start">开始</button>
+            <button id="pause">暂停</button>
+            <button id="reset">重置</button>
+        </div>
+        
+        <div class="sessions">
+            <p>已完成番茄: <span id="completed">0</span></p>
+            <p>当前模式: <span id="mode">工作</span></p>
+        </div>
+        
+        <div class="settings">
+            <label>工作时间 (分钟): <input type="number" id="work-time" value="25" min="1"></label>
+            <label>休息时间 (分钟): <input type="number" id="break-time" value="5" min="1"></label>
+            <button id="apply-settings">应用设置</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
